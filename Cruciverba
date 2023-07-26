@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IL CRUCI_CHINOTTO</title>
+  <style>
+    body {
+      background-color: #78B7C3; /* Celeste Miami */
+      background-image: url(https://www.pappagalliparlanti.it/images/i285415639407151473._szw480h1280_.jpg); /* Inserisci il link dell'immagine dei pappagallini */
+      background-repeat: repeat;
+       background-size: 100px;
+      font-family: Calibri, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: yellow;
+      text-shadow: 2px 2px 0 red, -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red; /* Effetto bordo rosso */
+      font-size: 50px;
+      padding: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    td {
+      width: 30px; /* Larghezza delle caselle */
+      height: 30px; /* Altezza delle caselle (stesso valore della larghezza per ottenere caselle quadrate) */
+      border:none;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: white;
+      
+    }
+
+        /* Modifica lo sfondo delle caselle specificate */
+    tr:nth-child(1) td:nth-child(1),
+    tr:nth-child(2) td:nth-child(5),
+    tr:nth-child(3) td:nth-child(3),
+    tr:nth-child(4) td:nth-child(1),
+    tr:nth-child(5) td:nth-child(4),
+    tr:nth-child(6) td:nth-child(1),
+    tr:nth-child(7) td:nth-child(1),
+    tr:nth-child(8) td:nth-child(1),
+    tr:nth-child(9) td:nth-child(6),
+    tr:nth-child(10) td:nth-child(2) {
+      background-color: yellow;
+    }
+    /* Scala le caselle gialle una sopra l'altra */
+    tr:nth-child(1) {
+      transform: translateX(-150px);
+    }
+tr:nth-child(2) {
+      transform: translateX(-270px);
+    }
+    tr:nth-child(3) {
+      transform: translateX(-210px);
+    }
+    tr:nth-child(4) {
+      transform: translateX(-150px);
+    }
+    tr:nth-child(5) {
+      transform: translateX(-240px);
+    }
+    tr:nth-child(6) {
+      transform: translateX(-150px);
+    }
+     tr:nth-child(7) {
+      transform: translateX(-150px);
+    }
+    tr:nth-child(8) {
+      transform: translateX(-150px);
+    }
+    tr:nth-child(9) {
+      transform: translateX(-300px);
+    }
+    tr:nth-child(10) {
+      transform: translateX(-180px);
+    }
+    input[type="text"] {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      outline: none;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: transparent;
+    }
+    /* Stile per la casella di testo a destra */
+    .text-box {
+      width: 300px;
+      padding: 10px;
+      background-color: #78B7C3; /* Celeste Miami */
+      color: white;
+      font-size: 18px;
+      margin-left: 500px;
+      margin-top: -300px;
+      border-radius: 5px;
+      line-height: 1.5;
+    }
+
+    /* Stile per l'elenco numerato */
+    .numbered-list {
+      list-style-type: decimal;
+      margin-left: 20px;
+       }
+       
+     /* Aggiungi una classe per l'animazione delle caselle selezionate */
+    .animate-cell {
+      animation: animateCellBackground 2s ease infinite;
+    }
+
+    /* Definisci l'animazione */
+    @keyframes animateCellBackground {
+      0%, 100% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: gold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>IL CRUCI_CHINOTTO</h1>
+  <table>
+    <!-- Prima riga -->
+    <tr>
+      <td class="input-cell"><input type="text" maxlength="1" ></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Seconda riga -->
+    <tr>
+     <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+
+    </tr>
+    <!-- Terza riga -->
+    <tr>
+      <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      
+    </tr>
+    <!-- Quarta riga -->
+    <tr>
+     <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Quinta riga -->
+    <tr>
+      <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Sesta riga -->
+    <tr>
+       <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+       <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Settima riga -->
+    <tr>
+       <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Ottava riga -->
+    <tr>
+       <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+    <!-- Nona riga -->
+    <tr>
+      <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+
+    </tr>
+    <!-- Decima riga -->
+    <tr>
+      <td class="input-cell"><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+      <td><input type="text" maxlength="1"></td>
+    </tr>
+ </table>
+  <div class="text-box">
+    <ol class="numbered-list">
+      <li>VIENE DOPO IL BOLIDE</li>
+      <li>DA MIMMO è OTTIMA</li>
+      <li>IL TUO AMATO CICCIO</li>
+      <li>L'HAI SALTATA TROPPE VOLTE</li>
+      <li>PIù FRESCA DELLA CEDRATA</li>
+      <li>IL TUO INCUBO PEGGIORE</li>
+      <li>SEI L'UNICO CHE LO METTE D'ESTATE</li>
+      <li>LA FOTOGRAFI SEMPRE</li>
+      <li>IL TUO SOSIA</li>
+      <li>LA TUA PROBABILITà DI CONQUISTARE UNA DONNA</li>
+    </ol>
+  </div>
+ 
+
+<button onclick="verificaRisposte()">Verifica</button>
+
+  <script>
+    function verificaRisposte() {
+      const soluzioni = ["P", "E", "U", "G", "E", "O", "T", "A", "C", "Q", "U", "A", "C", "A", "P", "U", "T", "O", "P", "A","L", "E", "S", "T", "R", "A", "O", "R", "Z", "A", "T", "A", "G", "E", "O", "M", "E", "T", "R", "I", "A", "A", "B", "I", "T", "O", "L", "U", "N", "A", "N", "I", "C", "H", "O", "L","A", "S", "N", "O", "V", "A", "N", "T", "A", "D", "U", "E"];
+
+      const inputElements = document.querySelectorAll('input[type="text"]');
+      let tutteCorrette = true;
+
+      inputElements.forEach((inputElement, index) => {
+        const soluzioneCorretta = soluzioni[index];
+        const letteraInserita = inputElement.value.toUpperCase();
+
+        if (letteraInserita === soluzioneCorretta) {
+          inputElement.style.backgroundColor = 'green';
+        } else {
+          inputElement.style.backgroundColor = 'red';
+          tutteCorrette = false;
+        }
+      });
+
+    if (tutteCorrette) {
+      alert('Complimenti! Hai completato il cruciverba correttamente.');
+
+      // Lista delle posizioni (riga, colonna) delle caselle da animare
+      const caselleDaAnimare = [
+        [1, 1],
+        [2, 5],
+        [3, 3],
+        [4, 1],
+        [5, 4],
+        [6, 1],
+        [7, 1],
+        [8, 1],
+        [9, 6],
+        [10, 2]
+      ];
+
+      // Aggiungi classe .animate-cell alle caselle da animare
+      caselleDaAnimare.forEach((pos) => {
+        const [riga, colonna] = pos;
+        const casellaDaAnimare = document.querySelector(`tr:nth-child(${riga}) td:nth-child(${colonna})`);
+        casellaDaAnimare.classList.add('animate-cell');
+      });
+    } else {
+      alert('Ci sono degli errori. Controlla le tue risposte e riprova.');
+    }
+  }
+</script>
+</body>
+</html>
